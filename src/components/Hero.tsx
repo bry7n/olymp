@@ -35,7 +35,7 @@ export function Hero() {
         <div className="absolute inset-0 w-full h-full">
           {/* Vídeo do Hamburger - visível quando showPizza for false */}
           <video
-            src="/pizza_seq/hamburger.mp4"
+            src="/media/hamburger.mp4"
             muted
             playsInline
             autoPlay
@@ -45,7 +45,7 @@ export function Hero() {
           />
           {/* Vídeo da Pizza - visível quando showPizza for true */}
           <video
-            src="/pizza_seq/bubbling_pizza.mp4"
+            src="/media/bubbling_pizza.mp4"
             muted
             playsInline
             autoPlay
