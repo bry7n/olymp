@@ -27,7 +27,6 @@ export function History() {
 
             <div className="absolute bottom-8 left-8 right-8 border-t border-zinc-800/80 pt-4 flex justify-between text-xs text-[#CA9949] font-medium z-10">
               <span>FUNDADO NAS SOMBRAS</span>
-              <span>EST. 2026</span>
             </div>
           </div>
         </motion.div>

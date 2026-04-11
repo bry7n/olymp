@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Outfit, Geist } from "next/font/google"; // Using Outfit and Geist as per taste-skill rules (avoiding Inter)
+import { Outfit, Geist, Fraunces } from "next/font/google"; // Using Fraunces as surrogate for Tenaciou
 import "./globals.css";
 
 const outfit = Outfit({
@@ -10,6 +10,11 @@ const outfit = Outfit({
 
 const geist = Geist({
   variable: "--font-satoshi", // Using alias for ease
+  subsets: ["latin"],
+});
+
+const fraunces = Fraunces({
+  variable: "--font-tenacious",
   subsets: ["latin"],
 });
 
@@ -24,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${outfit.variable} ${geist.variable} bg-black text-slate-200 antialiased`}>
+    <html lang="pt-BR" className={`${outfit.variable} ${geist.variable} ${fraunces.variable} bg-black text-slate-200 antialiased`}>
       <body suppressHydrationWarning className="min-h-[100dvh] bg-[#050505] selection:bg-[#CA9949] selection:text-black">
         {children}
       </body>
