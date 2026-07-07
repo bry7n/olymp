@@ -65,7 +65,7 @@ export function Footer() {
           <ul className="flex flex-col gap-3 text-sm">
             <li><a href="https://wa.me/5521976195529?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" className="hover:text-[#CA9949] transition-colors">WhatsApp</a></li>
             <li><a href="https://www.instagram.com/deusesolympus/" target="_blank" className="hover:text-[#CA9949] transition-colors">Instagram</a></li>
-            <li><a href="https://pedido.anota.ai/loja/olympus-delivery?f=ms" target="_blank" className="hover:text-[#CA9949] transition-colors">Anota AI</a></li>
+            <li><a href="https://pedido.brendi.com.br/olympus" target="_blank" className="hover:text-[#CA9949] transition-colors">Brendi</a></li>
           </ul>
         </div>
 
@@ -73,7 +73,7 @@ export function Footer() {
 
       <div className="max-w-[1400px] mx-auto mt-24 pt-8 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center gap-4 text-xs z-10 relative">
         <p>&copy; {new Date().getFullYear()} Deuses do Olympus. Todos os direitos reservados.</p>
-        <p>Desenvolvido por StartDev.</p>
+        <p></p>
       </div>
     </footer>
   );

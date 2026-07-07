@@ -3,7 +3,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import { ArrowRight, WhatsappLogo, InstagramLogo, X } from "@phosphor-icons/react";
-import AnotaAIIcon from "./AnotaAIIcon";
 
 export function Hero() {
   const [orderOpen, setOrderOpen] = useState(false);
@@ -183,11 +182,6 @@ export function Hero() {
               whileTap={{ scale: 0.95 }}
               className="bg-[#CA9949] pointer-events-auto min-w-[160px] h-12 rounded-full relative flex items-center justify-center transition-colors hover:bg-[#d4a85f] shadow-[0_10px_30px_rgba(202,153,73,0.3)] border border-[#d4a85f]/50 group px-4"
             >
-              {/* Ícone fixo à esquerda para não deslocar o texto do centro */}
-              <div className="absolute left-4">
-                <img src="/icons/anota_ai.png" alt="" className="w-6 h-6 object-contain" />
-              </div>
-              
               {/* Texto centralizado de forma absoluta no eixo do botão */}
               <span className="text-black font-bold text-base tracking-tight leading-none">
                 Peça Já!
@@ -234,9 +228,9 @@ export function Hero() {
               {/* Options */}
               <div className="flex flex-col gap-3">
 
-                {/* Anota AI */}
+                {/* Brendi */}
                 <motion.a
-                  href="https://pedido.anota.ai/loja/olympus-delivery?f=ms"
+                  href="https://pedido.brendi.com.br/olympus"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.02, x: 4 }}
@@ -244,11 +238,17 @@ export function Hero() {
                   className="group flex items-center gap-4 rounded-2xl border border-white/8 bg-white/5 px-5 py-4 transition-colors hover:border-[#CA9949]/50 hover:bg-[#CA9949]/8"
                 >
                   <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[#CA9949]/15 text-[#CA9949] transition-colors group-hover:bg-[#CA9949]/25">
-                    <img src="/icons/anota_ai.png" alt="Anota AI" className="w-8 h-8 object-contain" />
+                    <div 
+                      className="w-8 h-8 bg-current" 
+                      style={{
+                        WebkitMask: 'url(https://imgs.search.brave.com/0KpL4DyTHigpYht7ijEd2lcXgOAHPtRz6JCSEHPQrFE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTg0ODUxODZk/OWUzMGUxYzBmM2Ey/MzJmZmFiYTI3NWIz/NmY1ODcyMTlmM2Yx/NjFkZTA4NzQ2MmFj/MzE4NjQwMS9icmVu/ZGkuY29tLmJyLw) center/contain no-repeat',
+                        mask: 'url(https://imgs.search.brave.com/0KpL4DyTHigpYht7ijEd2lcXgOAHPtRz6JCSEHPQrFE/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTg0ODUxODZk/OWUzMGUxYzBmM2Ey/MzJmZmFiYTI3NWIz/NmY1ODcyMTlmM2Yx/NjFkZTA4NzQ2MmFj/MzE4NjQwMS9icmVu/ZGkuY29tLmJyLw) center/contain no-repeat'
+                      }}
+                    />
                   </span>
                   <div>
-                    <p className="font-semibold text-white text-sm">Anota AI</p>
-                    <p className="text-xs text-slate-500 mt-0.5">Cardápio online • pedido.anota.ai</p>
+                    <p className="font-semibold text-white text-sm">Brendi</p>
+                    <p className="text-xs text-slate-500 mt-0.5">Cardápio online • pedido.brendi.com.br</p>
                   </div>
                   <ArrowRight size={16} className="ml-auto text-slate-600 group-hover:text-[#CA9949] transition-colors" />
                 </motion.a>

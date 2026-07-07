@@ -47,7 +47,7 @@ export function MenuGrid() {
               Sem cardápios genéricos. Tudo aqui é desenhado para abalar o paladar.
             </p>
           </div>
-          <a href="https://pedido.anota.ai/loja/olympus-delivery?f=ms" target="_blank" className="flex items-center gap-2 text-[#CA9949] font-medium group transition-all hover:text-white">
+          <a href="https://pedido.brendi.com.br/olympus" target="_blank" className="flex items-center gap-2 text-[#CA9949] font-medium group transition-all hover:text-white">
             Ver Todo o Cardápio
             <ArrowRight weight="bold" className="group-hover:translate-x-1 transition-transform" />
           </a>
